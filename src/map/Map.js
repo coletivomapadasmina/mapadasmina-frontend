@@ -22,12 +22,15 @@ const MyMapComponent = compose(
     defaultZoom={8}
     defaultCenter={{ lat: -22.9138851, lng: -43.7261746 }}
   >
-    {props.isMarkerShown && (
-      <Marker
-        position={{ lat: -34.397, lng: 150.644 }}
-        onClick={props.onMarkerClick}
-      />
-    )}
+    {props.markers.map(m => {
+      return (
+        <Marker
+          key={m.id}
+          position={{ lat: m.latitude, lng: m.longitude }}
+          onClick={props.onMarkerClick}
+        />
+      )
+    })}
   </GoogleMap>
 ));
 

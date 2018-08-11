@@ -8,6 +8,11 @@ export default class MapWrapper extends React.PureComponent {
 
   componentDidMount() {
     this.delayedShowMarker();
+
+    fetch('/candidates.json')
+      .then(res => res.json())
+      .then(data => this.setState({ candidates: data }))
+      .catch(err => console.log('err: ', console.log('error')))
   }
 
   delayedShowMarker = () => {
@@ -26,6 +31,7 @@ export default class MapWrapper extends React.PureComponent {
       <Map
         isMarkerShown={this.state.isMarkerShown}
         onMarkerClick={this.handleMarkerClick}
+        markers={this.state.candidates}
       />
     );
   }
