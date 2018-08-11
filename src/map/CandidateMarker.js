@@ -3,13 +3,13 @@ import { Marker } from "react-google-maps";
 
 class CandidateMarker extends React.Component {
   render() {
-    const { id, latitude, longitude, name } = this.props;
+    const { candidate } = this.props;
 
     return (
       <Marker
-        key={id}
-        label={name}
-        position={{ lat: latitude, lng: longitude }}
+        key={candidate.id}
+        label={candidate.name}
+        position={{ lat: candidate.latitude, lng: candidate.longitude }}
       />
     );
   }

@@ -12,7 +12,7 @@ export default class MapWrapper extends React.PureComponent {
     fetch('/candidates.json')
       .then(res => res.json())
       .then(data => this.setState({ candidates: data }))
-      .catch(err => console.log('err: ', console.log('error')))
+      .catch(err => console.log('err: ', console.log('error: ', err)))
   }
 
   delayedShowMarker = () => {
