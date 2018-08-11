@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Alte Haas Grotesk Regular';
+    src: url('../fonts/AlteHaasGroteskRegular.ttf');
+}
+
+@font-face {
+    font-family: 'Alte Haas Grotesk Bold';
+    src: url('../fonts/AlteHaasGroteskBold.ttf');
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.links a {
+    font-family: 'Alte Haas Grotesk Bold', sans-serif;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.nav {
+    background-color: #7047D6;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.logomarca {
+    width: 20%;
+    height: 20%;
+}
+
+.btn-doe {
+    background-color: #4B92E5;
+    color: #FFF;
+}
