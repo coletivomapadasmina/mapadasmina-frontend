@@ -3,9 +3,10 @@ import { compose, withProps } from "recompose";
 import {
   withScriptjs,
   withGoogleMap,
-  GoogleMap,
-  Marker
+  GoogleMap
 } from "react-google-maps";
+
+import CandidateMarker from './CandidateMarker'
 
 const MyMapComponent = compose(
   withProps({
@@ -24,9 +25,11 @@ const MyMapComponent = compose(
   >
     {props.markers.map(m => {
       return (
-        <Marker
+        <CandidateMarker
           key={m.id}
-          position={{ lat: m.latitude, lng: m.longitude }}
+          id={m.id}
+          latitude={m.latitude}
+          longitude={m.longitude}
           onClick={props.onMarkerClick}
         />
       )
