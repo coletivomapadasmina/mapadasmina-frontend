@@ -21,15 +21,13 @@ const Map = compose(
 )(props => (
   <GoogleMap
     defaultZoom={8}
-    defaultCenter={{ lat: -22.9138851, lng: -43.7261746 }}
+    defaultCenter={{ lat: -22.0014199, lng: -42.4188065 }}
   >
     {props.markers.map(m => {
       return (
         <CandidateMarker
           key={m.id}
-          id={m.id}
-          latitude={m.latitude}
-          longitude={m.longitude}
+          candidate={m}
           onClick={props.onMarkerClick}
         />
       )
