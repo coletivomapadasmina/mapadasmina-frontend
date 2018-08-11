@@ -1,0 +1,18 @@
+body {
+    background-color: #9ADFFF;
+}
+
+.btn-mais {
+    background-color: #7047D6;
+    color: #FFF;
+}
+
+.header {
+    color: #FFF;
+    overflow: auto;
+    margin: 140px auto;
+}
+
+.header .text {
+    margin: 110px 0;
+}
