@@ -3,7 +3,7 @@ import { Marker } from "react-google-maps";
 
 class CandidateMarker extends React.Component {
   render() {
-    const { id, candidate } = this.props;
+    const { candidate } = this.props;
 
     return (
       <Marker
