@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Nav from './Componentes/Nav/Nav';
 import Header from './Componentes/Header/Header';
 import './App.css';
+import { Map } from './Map';
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
         <p className="App-intro">
 
         </p>
+        <Map isMarkerShown />
       </div>
     );
   }
