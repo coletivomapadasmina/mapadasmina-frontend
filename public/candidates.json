@@ -1,11 +1,40 @@
 [
     {
         "id" : 1,
-        "name" : "Marielle Franco",
+        "name" : "Marielle Francisco da Silva",
+        "electionName" : "Marielle Franco",
         "slug": "marielle-franco",
         "number": 50777,
+        "bio" : "big text",
+        "instagram" : "marielle_franco",
         "latitude": -22.9035,
         "longitude" : -43.2096,
+        "facebookUrl" : "url",
+        "campaignUrl" : "url",
+        "supportUrl" : "url",
+        "age" : 37,
+        "role" :  {
+            "id" : 1,
+            "name" : "Vereadora"
+        },
+        "electedBefore" : true,
+        "previousRole" : {
+            "id" : 1,
+            "name" : "Vereadora"
+        },
+        "ethnicity": {
+            "id" : 1,
+            "name" : "Parda"
+        },
+        "genderIdentity": {
+            "id" : 1,
+            "name" : "Cisgênero"
+        },
+        "causes": [{
+            "id": 1,
+            "title": "",
+            "deion": ""
+        }],
         "party": {
             "id" : 1,
             "name" : "PSOL",
@@ -18,11 +47,40 @@
     },
     {
         "id" : 2,
-        "name" : "Marielle Franco",
+        "name" : "Marielle Francisco da Silva",
+        "electionName" : "Marielle Franco",
         "slug": "marielle-franco",
         "number": 50777,
+        "bio" : "big text",
+        "instagram" : "marielle_franco",
         "latitude": -22.9511872,
         "longitude" : -43.1944118,
+        "facebookUrl" : "url",
+        "campaignUrl" : "url",
+        "supportUrl" : "url",
+        "age" : 37,
+        "role" :  {
+            "id" : 1,
+            "name" : "Vereadora"
+        },
+        "electedBefore" : true,
+        "previousRole" : {
+            "id" : 1,
+            "name" : "Vereadora"
+        },
+        "ethnicity": {
+            "id" : 1,
+            "name" : "Parda"
+        },
+        "genderIdentity": {
+            "id" : 1,
+            "name" : "Cisgênero"
+        },
+        "causes": [{
+            "id": 1,
+            "title": "",
+            "deion": ""
+        }],
         "party": {
             "id" : 1,
             "name" : "PSOL",
@@ -35,11 +93,40 @@
     },
     {
         "id" : 3,
-        "name" : "Marielle Franco",
+        "name" : "Marielle Francisco da Silva",
+        "electionName" : "Marielle Franco",
         "slug": "marielle-franco",
         "number": 50777,
+        "bio" : "big text",
+        "instagram" : "marielle_franco",
         "latitude": -22.9601575,
         "longitude" : -43.2160841,
+        "facebookUrl" : "url",
+        "campaignUrl" : "url",
+        "supportUrl" : "url",
+        "age" : 37,
+        "role" :  {
+            "id" : 1,
+            "name" : "Vereadora"
+        },
+        "electedBefore" : true,
+        "previousRole" : {
+            "id" : 1,
+            "name" : "Vereadora"
+        },
+        "ethnicity": {
+            "id" : 1,
+            "name" : "Parda"
+        },
+        "genderIdentity": {
+            "id" : 1,
+            "name" : "Cisgênero"
+        },
+        "causes": [{
+            "id": 1,
+            "title": "",
+            "deion": ""
+        }],
         "party": {
             "id" : 1,
             "name" : "PSOL",
@@ -52,11 +139,40 @@
     },
     {
         "id" : 4,
-        "name" : "Marielle Franco",
+        "name" : "Marielle Francisco da Silva",
+        "electionName" : "Marielle Franco",
         "slug": "marielle-franco",
         "number": 50777,
+        "bio" : "big text",
+        "instagram" : "marielle_franco",
         "latitude": -22.9315406,
         "longitude" : -43.2587205,
+        "facebookUrl" : "url",
+        "campaignUrl" : "url",
+        "supportUrl" : "url",
+        "age" : 37,
+        "role" :  {
+            "id" : 1,
+            "name" : "Vereadora"
+        },
+        "electedBefore" : true,
+        "previousRole" : {
+            "id" : 1,
+            "name" : "Vereadora"
+        },
+        "ethnicity": {
+            "id" : 1,
+            "name" : "Parda"
+        },
+        "genderIdentity": {
+            "id" : 1,
+            "name" : "Cisgênero"
+        },
+        "causes": [{
+            "id": 1,
+            "title": "",
+            "deion": ""
+        }],
         "party": {
             "id" : 1,
             "name" : "PSOL",
@@ -69,11 +185,40 @@
     },
     {
         "id" : 5,
-        "name" : "Marielle Franco",
+        "name" : "Marielle Francisco da Silva",
+        "electionName" : "Marielle Franco",
         "slug": "marielle-franco",
         "number": 50777,
+        "bio" : "big text",
+        "instagram" : "marielle_franco",
         "latitude": -22.8375763,
         "longitude" : -43.382876,
+        "facebookUrl" : "url",
+        "campaignUrl" : "url",
+        "supportUrl" : "url",
+        "age" : 37,
+        "role" :  {
+            "id" : 1,
+            "name" : "Vereadora"
+        },
+        "electedBefore" : true,
+        "previousRole" : {
+            "id" : 1,
+            "name" : "Vereadora"
+        },
+        "ethnicity": {
+            "id" : 1,
+            "name" : "Parda"
+        },
+        "genderIdentity": {
+            "id" : 1,
+            "name" : "Cisgênero"
+        },
+        "causes": [{
+            "id": 1,
+            "title": "",
+            "deion": ""
+        }],
         "party": {
             "id" : 1,
             "name" : "PSOL",
