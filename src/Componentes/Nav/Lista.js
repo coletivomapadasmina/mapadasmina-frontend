@@ -1,5 +1,4 @@
 import React from 'react';
-import Logomarca from '../img/Logomarca.jpg';
 import './Nav.css';
 
 function Lista(props) {
