@@ -8,7 +8,7 @@ import {
 
 import CandidateMarker from './CandidateMarker'
 
-const MyMapComponent = compose(
+const Map = compose(
   withProps({
     googleMapURL:
       "https://maps.googleapis.com/maps/api/js?key=AIzaSyDmIlNLJYDwsNS99W2FVGnhoYRByofzyrU&v=3.exp&libraries=geometry,drawing,places",
@@ -37,4 +37,4 @@ const MyMapComponent = compose(
   </GoogleMap>
 ));
 
-export default MyMapComponent
+export default Map
