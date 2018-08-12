@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Nav from './Componentes/Nav/Nav';
-import Header from './Componentes/Header/Header';
+import Nav from './Components/Nav/Nav';
+import Header from './Components/Header/Header';
 import './App.css';
 import MapWrapper from './map/MapWrapper';
 

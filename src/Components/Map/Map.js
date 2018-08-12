@@ -19,22 +19,26 @@ const Map = compose(
   withScriptjs,
   withGoogleMap
 )(props => (
-  <GoogleMap
-    defaultZoom={8}
-    defaultCenter={{ lat: -22.9138851, lng: -43.7261746 }}
-  >
-    {props.markers.map(m => {
-      return (
-        <CandidateMarker
-          key={m.id}
-          id={m.id}
-          latitude={m.latitude}
-          longitude={m.longitude}
-          onClick={props.onMarkerClick}
-        />
-      )
-    })}
-  </GoogleMap>
+  <section id="mapa">
+    <div className="parallax-mapa"></div>
+    <GoogleMap
+      className="parallax-content-mapa"
+      defaultZoom={8}
+      defaultCenter={{ lat: -22.9138851, lng: -43.7261746 }}
+    >
+      {props.markers.map(m => {
+        return (
+          <CandidateMarker
+            key={m.id}
+            id={m.id}
+            latitude={m.latitude}
+            longitude={m.longitude}
+            onClick={props.onMarkerClick}
+          />
+        )
+      })}
+    </GoogleMap>
+  </section>
 ));
 
 export default Map
