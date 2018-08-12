@@ -5,7 +5,7 @@ import Profile from '../Profile/Profile'
 
 function Tabs(props) {
     return (
-        <section className="tabs col-md-5">
+        <section className="tabs col-md-4">
             <div className="col-md-12 panel">
               <CausesWrapper />
               <Profile />
