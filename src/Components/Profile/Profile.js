@@ -22,9 +22,15 @@ export default class Profile extends React.PureComponent {
       <div className="profile-candidate col-md-12">
         <div className="inner">
           <h3>{profile.electionName}</h3>
-          <img src={profile.picture.url} /><br />
-          <span>{profile.party.name} | {profile.number}</span><br />
-          <p>{profile.bio}</p>
+          <div className="container profile-photo">
+            <img
+                className="figure-img rounded-circle"
+                src={profile.picture.url} />
+          </div>
+          <div>
+              <span>{profile.party.name} | {profile.number}</span><br />
+              <p>{profile.bio}</p>
+          </div>
         </div>
       </div>
     )

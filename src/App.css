@@ -50,3 +50,7 @@ body {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+h1, h2, h3 {
+  font-family: 'Alte Haas Grotesk Bold', sans-serif;
+}

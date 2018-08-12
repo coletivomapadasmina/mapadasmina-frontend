@@ -8,11 +8,8 @@
     padding-right: 0;
 }
 
-.tabs div {
-    display: inline-table;
-}
-
 .panel {
+    display: inline-table;
     float: right;
     background-color: rgba(75, 146, 229, 0.8);
 }

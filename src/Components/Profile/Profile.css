@@ -8,3 +8,16 @@
     margin: 20px;
 }
 
+.profile-candidate h3 {
+    color: #FFF;
+}
+
+.profile-photo {
+    margin: 20px 0;
+}
+
+.profile-candidate img {
+    object-fit: cover;
+    width: 30vh;
+    height: 30vh;
+}
