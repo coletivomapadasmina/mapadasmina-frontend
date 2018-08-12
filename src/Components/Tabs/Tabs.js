@@ -7,7 +7,9 @@ function Tabs(props) {
     return (
         <div className="tabs">
             <div className="col-md-12 panel">
-              <CausesWrapper />
+              <CausesWrapper
+                onChange={props.onChange}
+              />
               <Profile />
             </div>
         </div>

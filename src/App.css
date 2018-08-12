@@ -8,6 +8,15 @@
     src: url('./fonts/AlteHaasGroteskBold.ttf');
 }
 
+* {
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+}
 
 label {
   font-family: 'Alte Haas Grotesk Regular', sans-serif;
