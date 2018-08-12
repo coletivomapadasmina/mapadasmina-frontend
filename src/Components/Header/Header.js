@@ -1,5 +1,4 @@
 import React from 'react';
-import VideoMapa from '../../assets/movies/mapa.mov';
 import './Header.css';
 
 function Header(props) {
@@ -8,9 +7,7 @@ function Header(props) {
           <div className="container">
               <div className="row">
                   <div className="col-md-7">
-                    <div className="embed-responsive embed-responsive-16by9">
-                      <video src={VideoMapa} preload controls />
-                    </div>
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/t7lM7Bn16Zg" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
                   </div>
                   <div className="col-md-5 text">
                       <p>Texto de apresentação #mapas da mina</p>
