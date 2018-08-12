@@ -1,13 +1,3 @@
-@font-face {
-    font-family: 'Alte Haas Grotesk Regular';
-    src: url('../fonts/AlteHaasGroteskRegular.ttf');
-}
-
-@font-face {
-    font-family: 'Alte Haas Grotesk Bold';
-    src: url('../fonts/AlteHaasGroteskBold.ttf');
-}
-
 * {
     list-style: none;
     text-decoration: none;

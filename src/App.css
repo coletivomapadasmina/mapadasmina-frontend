@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'Alte Haas Grotesk Regular';
+    src: url('./fonts/AlteHaasGroteskRegular.ttf');
+}
+
+@font-face {
+    font-family: 'Alte Haas Grotesk Bold';
+    src: url('./fonts/AlteHaasGroteskBold.ttf');
+}
+
+
+label {
+  font-family: 'Alte Haas Grotesk Regular', sans-serif;
+}
+
 .App {
   text-align: center;
 }
