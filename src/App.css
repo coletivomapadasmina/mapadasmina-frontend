@@ -13,6 +13,10 @@ label {
   font-family: 'Alte Haas Grotesk Regular', sans-serif;
 }
 
+section {
+    margin-top: 66px;
+}
+
 .App {
   text-align: center;
 }

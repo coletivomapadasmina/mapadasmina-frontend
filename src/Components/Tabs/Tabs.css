@@ -1,16 +1,16 @@
 .tabs {
     position: absolute;
     z-index: 2;
-    opacity: 0.8;
+    right: 0px;
 }
 
 .tabs div {
-    right: -15px;
     display: inline-table;
 }
 
 .panel {
-    background-color: #4B92E5;
+    float: right;
+    background-color: rgba(75, 146, 229, 0.8);
 }
 
 .map {
