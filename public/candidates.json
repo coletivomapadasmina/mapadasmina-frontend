@@ -31,9 +31,9 @@
             "name" : "Cisgênero"
         },
         "causes": [{
-            "id": 1,
-            "title": "",
-            "deion": ""
+            "id": 3,
+            "title": "Humanização do SUS",
+            "description": "Lutar contra a violência obstétrica e pela humanização do SUS"
         }],
         "party": {
             "id" : 1,
@@ -79,7 +79,7 @@
         "causes": [{
             "id": 1,
             "title": "",
-            "deion": ""
+            "description": ""
         }],
         "party": {
             "id" : 1,
@@ -125,7 +125,7 @@
         "causes": [{
             "id": 1,
             "title": "",
-            "deion": ""
+            "description": ""
         }],
         "party": {
             "id" : 1,
@@ -171,7 +171,7 @@
         "causes": [{
             "id": 1,
             "title": "",
-            "deion": ""
+            "description": ""
         }],
         "party": {
             "id" : 1,
@@ -217,7 +217,7 @@
         "causes": [{
             "id": 1,
             "title": "",
-            "deion": ""
+            "description": ""
         }],
         "party": {
             "id" : 1,
