@@ -12,7 +12,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('/candidates.json')
+    fetch('https://mapadasminas-api.herokuapp.com/candidates.json')
       .then(res => res.json())
       .then(data => this.setState({ candidates: data }))
       .catch(err => console.log('err: ', console.log('error: ', err)))
