@@ -3,7 +3,7 @@ import './Header.css';
 
 function Header(props) {
     return (
-      <section className="header">
+      <section className="header d-flex align-items-center h-100">
           <div className="container">
               <div className="row">
                   <div className="col-md-7 embed-responsive  embed-responsive-16by9">

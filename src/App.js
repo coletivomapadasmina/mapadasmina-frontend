@@ -12,10 +12,8 @@ class App extends Component {
         <Nav />
         <Header />
 
-        <div>
-            <Tabs />
-            <MapWrapper isMarkerShown />
-        </div>
+        <Tabs />
+        <MapWrapper isMarkerShown />
       </div>
     );
   }
