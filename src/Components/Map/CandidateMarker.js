@@ -2,7 +2,7 @@ import React from "react";
 import { Marker } from "react-google-maps";
 import { getIcon } from '../../utils'
 
-class CandidateMarker extends React.Component {
+class CandidateMarker extends React.PureComponent {
   render() {
     const { candidate } = this.props;
 
