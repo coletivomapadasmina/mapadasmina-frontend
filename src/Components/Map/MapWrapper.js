@@ -3,7 +3,8 @@ import Map from './Map'
 
 export default class MapWrapper extends React.PureComponent {
   state = {
-    isMarkerShown: false
+    isMarkerShown: false,
+    candidates: []
   };
 
   componentDidMount() {
