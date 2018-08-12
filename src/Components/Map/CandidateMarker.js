@@ -1,5 +1,6 @@
 import React from "react";
 import { Marker } from "react-google-maps";
+import { getIcon } from '../utils'
 
 class CandidateMarker extends React.Component {
   render() {
@@ -8,8 +9,8 @@ class CandidateMarker extends React.Component {
     return (
       <Marker
         key={candidate.id}
-        label={candidate.name}
         position={{ lat: candidate.latitude, lng: candidate.longitude }}
+        icon={getIcon(candidate.role.id)}
       />
     );
   }

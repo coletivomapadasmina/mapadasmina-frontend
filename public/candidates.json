@@ -60,8 +60,8 @@
         "supportUrl" : "url",
         "age" : 37,
         "role" :  {
-            "id" : 1,
-            "name" : "Vereadora"
+            "id" : 3,
+            "name" : "Deputada Estadual"
         },
         "electedBefore" : true,
         "previousRole" : {
@@ -111,8 +111,8 @@
         },
         "electedBefore" : true,
         "previousRole" : {
-            "id" : 1,
-            "name" : "Vereadora"
+            "id" : 2,
+            "name" : "Deputada Federal"
         },
         "ethnicity": {
             "id" : 1,
@@ -152,8 +152,8 @@
         "supportUrl" : "url",
         "age" : 37,
         "role" :  {
-            "id" : 1,
-            "name" : "Vereadora"
+            "id" : 2,
+            "name" : "Deputada Federal"
         },
         "electedBefore" : true,
         "previousRole" : {
@@ -198,8 +198,8 @@
         "supportUrl" : "url",
         "age" : 37,
         "role" :  {
-            "id" : 1,
-            "name" : "Vereadora"
+            "id" : 3,
+            "name" : "Deputada Estadual"
         },
         "electedBefore" : true,
         "previousRole" : {
