@@ -4,6 +4,10 @@
     right: 0px;
 }
 
+.tabs.col-md-5 {
+    padding-right: 0;
+}
+
 .tabs div {
     display: inline-table;
 }
