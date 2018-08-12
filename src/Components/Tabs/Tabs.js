@@ -7,7 +7,9 @@ function Tabs(props) {
         <div className="tabs col-md-12">
             <div className="col-md-7"></div>
             <div className="col-md-5 panel">
-              <CausesWrapper />
+              <CausesWrapper
+                onChange={props.onChange}
+              />
             </div>
         </div>
     )

@@ -1,9 +1,13 @@
 import React from 'react'
 
 const CausesItems = (props) => (
-  <li>
+  <li className="causes-item">
     <label>
-      <input type="checkbox" />
+      <input
+        id={props.cause.id}
+        type="checkbox"
+        onChange={props.onChange}
+      />
       {props.cause.title}
     </label>
   </li>

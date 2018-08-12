@@ -1,3 +1,12 @@
+#causes-wrapper {
+	margin-top: 2rem;
+}
+
 .causes-list {
 	text-align: left;
+}
+
+.causes-item input[type=checkbox] {
+	margin: 0;
+	margin-right: 0.5rem;
 }

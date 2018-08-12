@@ -18,16 +18,20 @@ export default class CausesWrapper extends React.PureComponent {
     const { causes } = this.state
 
     return (
-      <ul class="causes-list">
-      {causes && causes.map(c => {
-        return (
-          <CausesItem
-            key={c.id}
-            cause={c}
-          />
-        )
-      })}
-      </ul>
+      <div id="causes-wrapper">
+        <h3>Pautas</h3>
+        <ul className="causes-list">
+        {causes && causes.map(c => {
+          return (
+            <CausesItem
+              key={c.id}
+              cause={c}
+              onChange={this.props.onChange}
+            />
+          )
+        })}
+        </ul>
+      </div>
     )
   }
 }

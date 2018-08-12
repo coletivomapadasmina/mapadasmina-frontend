@@ -6,6 +6,28 @@ import './App.css';
 import MapWrapper from './Components/Map/MapWrapper';
 
 class App extends Component {
+  state = {
+    candidates: [],
+    checked: [],
+  }
+
+  componentDidMount() {
+    fetch('/candidates.json')
+      .then(res => res.json())
+      .then(data => this.setState({ candidates: data }))
+      .catch(err => console.log('err: ', console.log('error: ', err)))
+  }
+
+  onChange(e) {
+    console.log('cause: ', e.target.id, e.target.checked)
+    // const item = e.target
+    // const checked = this.state.checked
+
+    // if (item.checked) {
+    //   checked.push(item.id)
+    // }
+  }
+
   render() {
     return (
       <div className="App">
@@ -13,8 +35,14 @@ class App extends Component {
         <Header />
 
         <div>
-            <Tabs />
-            <MapWrapper isMarkerShown />
+            <Tabs
+              onChange={this.onChange}
+            />
+            <MapWrapper
+              isMarkerShown
+              markers={this.state.candidates}
+              checked={this.state.checked}
+            />
         </div>
       </div>
     );
