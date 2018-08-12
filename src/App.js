@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Nav from './Components/Nav/Nav';
 import Header from './Components/Header/Header';
 import './App.css';
-import MapWrapper from './map/MapWrapper';
+import MapWrapper from './Components/Map/MapWrapper';
 
 class App extends Component {
   render() {
