@@ -6,7 +6,7 @@ function Lista(props) {
     return (
         <ul className="links">
             <li>
-                <a href="#">vamos começar</a>
+                <a href="#mapa">vamos começar</a>
             </li>
             <li>
                 <a href="#">saiba mais</a>

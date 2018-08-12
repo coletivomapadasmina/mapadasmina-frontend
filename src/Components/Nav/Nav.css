@@ -30,7 +30,6 @@ a {
 
 .nav {
     background-color: #7047D6;
-    text-transform: uppercase;
     display: flex;
     justify-content: space-around;
 }
