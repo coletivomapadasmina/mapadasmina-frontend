@@ -1,4 +1,23 @@
 .profile-candidate {
-    height: 100vh;
+    height: 96vh;
+    padding: 20px;
     background-color: #4B92E5;
+}
+
+.profile-candidate .inner {
+    margin: 20px;
+}
+
+.profile-candidate h3 {
+    color: #FFF;
+}
+
+.profile-photo {
+    margin: 20px 0;
+}
+
+.profile-candidate img {
+    object-fit: cover;
+    width: 30vh;
+    height: 30vh;
 }

@@ -34,16 +34,14 @@ class App extends Component {
         <Nav />
         <Header />
 
-        <div>
-            <Tabs
-              onChange={this.onChange}
-            />
-            <MapWrapper
-              isMarkerShown
-              markers={this.state.candidates}
-              checked={this.state.checked}
-            />
-        </div>
+        <Tabs
+          onChange={this.onChange}
+        />
+        <MapWrapper
+          isMarkerShown
+          markers={this.state.candidates}
+          checked={this.state.checked}
+        />
       </div>
     );
   }

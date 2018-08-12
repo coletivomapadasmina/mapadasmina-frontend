@@ -1,5 +1,6 @@
 #causes-wrapper {
 	margin-top: 2rem;
+  display: none;
 }
 
 .causes-list {

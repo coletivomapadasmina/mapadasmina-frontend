@@ -23,7 +23,12 @@ label {
 }
 
 section {
-    margin-top: 66px;
+    min-height: 90vh;
+    padding-top: 65px;
+}
+
+body {
+    background-color: #EEF2F5;
 }
 
 .App {
@@ -53,4 +58,8 @@ section {
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+h1, h2, h3 {
+  font-family: 'Alte Haas Grotesk Bold', sans-serif;
 }
