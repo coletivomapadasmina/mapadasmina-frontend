@@ -1,0 +1,20 @@
+.tabs {
+    position: absolute;
+    top: 101.5vh;
+    z-index: 9;
+    opacity: 0.8;
+}
+
+.tabs div {
+    min-height: 100vh;
+    right: -15px;
+    display: inline-table;
+}
+
+.panel {
+    background-color: #4B92E5;
+}
+
+.map {
+    z-index: 1;
+}

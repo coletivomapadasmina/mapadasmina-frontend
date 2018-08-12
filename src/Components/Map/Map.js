@@ -19,10 +19,7 @@ const Map = compose(
   withScriptjs,
   withGoogleMap
 )(props => (
-  <section id="mapa">
-    <div className="parallax-mapa"></div>
     <GoogleMap
-      className="parallax-content-mapa"
       defaultZoom={8}
       defaultCenter={{ lat: -22.0014199, lng: -42.4188065 }}
     >
@@ -36,7 +33,6 @@ const Map = compose(
         )
       })}
     </GoogleMap>
-  </section>
 ));
 
 export default Map

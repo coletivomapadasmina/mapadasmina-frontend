@@ -29,11 +29,15 @@ export default class MapWrapper extends React.PureComponent {
 
   render() {
     return (
-      <Map
-        isMarkerShown={this.state.isMarkerShown}
-        onMarkerClick={this.handleMarkerClick}
-        markers={this.state.candidates}
-      />
+      <section id="mapa" className="map">
+          <div className="parallax-mapa"></div>
+          <Map
+            className="parallax-content-mapa map"
+            isMarkerShown={this.state.isMarkerShown}
+            onMarkerClick={this.handleMarkerClick}
+            markers={this.state.candidates}
+          />
+      </section>
     );
   }
 }
