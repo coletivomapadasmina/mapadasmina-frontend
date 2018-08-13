@@ -5,14 +5,14 @@ import Profile from '../Profile/Profile'
 
 function Tabs(props) {
     return (
-        <div className="tabs">
+        <section className="tabs col-md-4">
             <div className="col-md-12 panel">
               <CausesWrapper
                 onChange={props.onChange}
               />
               <Profile />
             </div>
-        </div>
+        </section>
     )
 }
 

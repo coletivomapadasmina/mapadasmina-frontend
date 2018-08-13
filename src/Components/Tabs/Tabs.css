@@ -4,11 +4,12 @@
     right: 0px;
 }
 
-.tabs div {
-    display: inline-table;
+.tabs.col-md-4 {
+    padding-right: 0;
 }
 
 .panel {
+    display: inline-table;
     float: right;
     background-color: rgba(75, 146, 229, 0.8);
 }
