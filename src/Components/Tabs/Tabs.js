@@ -10,7 +10,7 @@ function Tabs(props) {
               <CausesWrapper
                 onChange={props.onChange}
               />
-              <Profile />
+              {props.profile && (<Profile />)}
             </div>
         </section>
     )
