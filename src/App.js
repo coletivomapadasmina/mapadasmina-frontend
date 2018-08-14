@@ -18,14 +18,19 @@ class App extends Component {
       .catch(err => console.log('err: ', console.log('error: ', err)))
   }
 
-  onChange(e) {
-    console.log('cause: ', e.target.id, e.target.checked)
-    // const item = e.target
-    // const checked = this.state.checked
+  onChange = (e) => {
+    const { candidates } = this.state
 
-    // if (item.checked) {
-    //   checked.push(item.id)
-    // }
+    //const isChecked = e.target.checked
+    const checkedId = parseInt(e.target.id, 10)
+
+    // const selectedCauses = isChecked ? checked.push(checkedId) : checked.splice(checked.indexOf(checkedId), 1)
+    const hasSelected = (cause) => cause.id === checkedId
+    const filteredCandidates = candidates.filter(c => c.causes.find(hasSelected))
+
+    this.setState({
+      candidates: filteredCandidates
+    })
   }
 
   render() {
