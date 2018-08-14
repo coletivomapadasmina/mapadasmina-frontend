@@ -25,6 +25,7 @@ export default class Profile extends React.PureComponent {
           <div className="container profile-photo">
             <img
                 className="figure-img rounded-circle"
+                alt={profile.electionName}
                 src={profile.picture.url} />
           </div>
           <div>

@@ -8,6 +8,7 @@ function Header(props) {
               <div className="row">
                   <div className="col-md-7 embed-responsive  embed-responsive-16by9">
                       <iframe
+                        title="Mapa das Mina"
                         className="embed-responsive-item"
                         src="https://www.youtube.com/embed/A1Ne7iXNtDo"
                         frameBorder="0"
