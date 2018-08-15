@@ -9,7 +9,7 @@ function Tabs(props) {
             <div className="col-md-12 panel">
               {
                 props.profile
-                ? <Profile profile={props.profile} />
+                ? <Profile profile={props.profile} handleClose={props.handleClose} />
                 : <CausesWrapper onChange={props.onChange} />
               }
             </div>

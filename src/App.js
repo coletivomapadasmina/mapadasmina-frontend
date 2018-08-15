@@ -34,6 +34,12 @@ class App extends Component {
     })
   }
 
+  handleClose = () => {
+    this.setState({
+      selectedCandidate: null
+    })
+  }
+
   handleMarkerClick = (candidate) => {
     this.setState({
       selectedCandidate: candidate
@@ -49,6 +55,7 @@ class App extends Component {
         <Tabs
           onChange={this.onChange}
           profile={this.state.selectedCandidate}
+          handleClose={this.handleClose}
         />
         <MapWrapper
           isMarkerShown
