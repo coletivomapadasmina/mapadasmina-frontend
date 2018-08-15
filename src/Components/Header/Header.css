@@ -7,6 +7,59 @@
     overflow: auto;
 }
 
-.header .text {
-    margin: 110px 0;
+.video-container {
+	position: absolute;
+  top: 35px;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-container .embed-responsive {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.go-to-map {
+	position: absolute;
+	right: 3rem;
+	bottom: 3rem;
+	z-index: 2;
+}
+
+a.link-to-map {
+	color: '#fff' !important;
+	font-family: 'Alte Haas Grotesk Bold';
+	text-decoration: none;
+}
+
+.circle-to-map {
+	width: 6rem;
+	height: 6rem;
+	border-radius: 100%;
+	background-color: #fff;
+	margin: 0 auto;
+	border: solid #7047D6;
+	margin-top: 1rem;
+}
+
+i {
+  border: solid #7047D6;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-top: 25px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
