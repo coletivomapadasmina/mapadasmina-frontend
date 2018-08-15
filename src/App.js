@@ -4,6 +4,8 @@ import Header from './Components/Header/Header';
 import Tabs from './Components/Tabs/Tabs.js';
 import './App.css';
 import MapWrapper from './Components/Map/MapWrapper';
+import Motivation from './Components/Motivation';
+import About from './Components/About';
 
 class App extends Component {
   state = {
@@ -63,6 +65,10 @@ class App extends Component {
           checked={this.state.checked}
           handleMarkerClick={this.handleMarkerClick}
         />
+
+        <Motivation />
+
+        <About />
       </div>
     );
   }

@@ -6,13 +6,13 @@ function Lista(props) {
     return (
         <ul className="links">
             <li>
-                <a href="#mapa">vamos começar</a>
+                <a href="#mapa">o mapa</a>
             </li>
             <li>
-                <a href="#">saiba mais</a>
+                <a href="#motivation">por que votar em mulheres?</a>
             </li>
             <li>
-                <a href="#">fale com a gente</a>
+                <a href="#about">quem somos</a>
             </li>
             <li>
                 <a href="#"><button className="btn btn-doe">doe para o #mapa</button></a>
