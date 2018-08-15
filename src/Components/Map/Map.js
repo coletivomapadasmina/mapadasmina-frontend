@@ -28,7 +28,7 @@ const Map = compose(
           <CandidateMarker
             key={m.id}
             candidate={m}
-            onClick={props.onMarkerClick}
+            handleClick={props.onMarkerClick}
           />
         )
       })}

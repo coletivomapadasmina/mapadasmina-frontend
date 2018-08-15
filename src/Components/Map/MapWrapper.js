@@ -16,7 +16,8 @@ export default class MapWrapper extends React.PureComponent {
     }, 3000);
   };
 
-  handleMarkerClick = () => {
+  handleMarkerClick = (candidate) => {
+    this.props.handleMarkerClick(candidate)
     this.setState({ isMarkerShown: false });
     this.delayedShowMarker();
   };

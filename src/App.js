@@ -9,6 +9,7 @@ class App extends Component {
   state = {
     candidates: [],
     checked: [],
+    selectedCandidate: null,
   }
 
   componentDidMount() {
@@ -33,6 +34,12 @@ class App extends Component {
     })
   }
 
+  handleMarkerClick = (candidate) => {
+    this.setState({
+      selectedCandidate: candidate
+    })
+  }
+
   render() {
     return (
       <div className="App">
@@ -41,11 +48,13 @@ class App extends Component {
 
         <Tabs
           onChange={this.onChange}
+          profile={this.state.selectedCandidate}
         />
         <MapWrapper
           isMarkerShown
           markers={this.state.candidates}
           checked={this.state.checked}
+          handleMarkerClick={this.handleMarkerClick}
         />
       </div>
     );
