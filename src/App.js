@@ -10,29 +10,71 @@ import About from './Components/About';
 class App extends Component {
   state = {
     candidates: [],
-    checked: [],
+    visibleCandidates: [],
     selectedCandidate: null,
+    checkedCauses: [],
   }
 
   componentDidMount() {
     fetch('/candidates.json')
       .then(res => res.json())
-      .then(data => this.setState({ candidates: data }))
+      .then(data => {
+        const candidates = this.getCausesIndexes(data)
+        this.setState({ candidates, visibleCandidates: candidates })
+      })
       .catch(err => console.log('err: ', console.log('error: ', err)))
   }
 
-  onChange = (e) => {
-    const { candidates } = this.state
+  // It creates an array of causes indexes to facilitate filtering
+  getCausesIndexes(candidates) {
+    return candidates.map(candidate => {
+      candidate.causesIndexes = []
+      candidate.causes.map(cause => candidate.causesIndexes.push(cause.id))
+      return candidate
+    })
+  }
 
-    //const isChecked = e.target.checked
+  onChange = (e) => {
+    const isChecked = e.target.checked
     const checkedId = parseInt(e.target.id, 10)
 
-    // const selectedCauses = isChecked ? checked.push(checkedId) : checked.splice(checked.indexOf(checkedId), 1)
-    const hasSelected = (cause) => cause.id === checkedId
-    const filteredCandidates = candidates.filter(c => c.causes.find(hasSelected))
+    isChecked
+      ? this.addRestriction(checkedId)
+      : this.removeRestriction(checkedId)
+  }
+
+  addRestriction = (checkedId) => {
+    const { visibleCandidates, checkedCauses } = this.state
+
+    const hasCheckedCause = (cause) => cause.id === checkedId
+    const filteredCandidates = visibleCandidates.filter(
+      candidate => candidate.causes.find(hasCheckedCause)
+    )
+
+    checkedCauses.push(checkedId)
 
     this.setState({
-      candidates: filteredCandidates
+      visibleCandidates: filteredCandidates,
+      checkedCauses: checkedCauses
+    })
+  }
+
+  removeRestriction = (checkedId) => {
+    const { candidates, checkedCauses } = this.state
+
+    checkedCauses.splice(checkedCauses.indexOf(checkedId), 1)
+
+    const filteredCandidates = candidates.filter(
+      candidate => checkedCauses.every(
+        cause => candidate.causesIndexes.indexOf(cause) !== -1
+      )
+    )
+
+    const visibleCandidates = checkedCauses.length ? filteredCandidates : candidates
+
+    this.setState({
+      visibleCandidates,
+      checkedCauses: checkedCauses
     })
   }
 
@@ -61,7 +103,7 @@ class App extends Component {
         />
         <MapWrapper
           isMarkerShown
-          markers={this.state.candidates}
+          markers={this.state.visibleCandidates}
           checked={this.state.checked}
           handleMarkerClick={this.handleMarkerClick}
         />

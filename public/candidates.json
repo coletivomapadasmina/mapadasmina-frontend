@@ -77,9 +77,13 @@
             "name" : "Cisgênero"
         },
         "causes": [{
-            "id": 1,
-            "title": "",
-            "description": ""
+            "id": 2,
+            "title": "Fim da violência contra a mulher",
+            "description": "Defender legislações que lutem pelo fim da violência contra a mulher"
+        }, {
+            "id": 3,
+            "title": "Humanização do SUS",
+            "description": "Lutar contra a violência obstétrica e pela humanização do SUS"
         }],
         "party": {
             "id" : 1,
