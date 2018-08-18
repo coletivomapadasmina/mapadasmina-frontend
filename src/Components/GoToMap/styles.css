@@ -1,0 +1,29 @@
+.go-to-map {
+	position: absolute;
+	right: 3rem;
+	bottom: 3rem;
+	z-index: 2;
+}
+
+.circle-to-map {
+	width: 6rem;
+	height: 6rem;
+	border-radius: 100%;
+	background-color: #fff;
+	margin: 0 auto;
+	margin-top: 1rem;
+}
+
+i {
+  border: solid #7047D6;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-top: 25px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import GoToMap from '../GoToMap'
 import './Header.css';
 
 function Header(props) {
@@ -15,14 +16,7 @@ function Header(props) {
                   allowFullScreen />
             </div>
           </div>
-        <div className="go-to-map">
-            <a className="link-to-map" href="#mapa">
-              <span>IR PARA O MAPA</span>
-              <div className="circle-to-map">
-                <i className="down" aria-hidden="true"></i>
-              </div>
-            </a>
-        </div>
+          <GoToMap styles="down" />
       </section>
     )
 }
