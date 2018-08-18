@@ -1,34 +1,48 @@
 @font-face {
-    font-family: 'Alte Haas Grotesk Regular';
-    src: url('./fonts/AlteHaasGroteskRegular.ttf');
+  font-family: 'Alte Haas Grotesk Regular';
+  src: url('./fonts/AlteHaasGroteskRegular.ttf');
 }
 
 @font-face {
-    font-family: 'Alte Haas Grotesk Bold';
-    src: url('./fonts/AlteHaasGroteskBold.ttf');
+  font-family: 'Alte Haas Grotesk Bold';
+  src: url('./fonts/AlteHaasGroteskBold.ttf');
 }
 
 * {
-    list-style: none;
-    text-decoration: none;
+  list-style: none;
+  text-decoration: none;
 }
 
 a {
-    text-decoration: none;
-    list-style: none;
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
 }
 
-label {
+a:hover {
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Alte Haas Grotesk Bold', sans-serif;
+  margin-top: 1rem;
+}
+
+h3, h4 {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+a, p, label {
   font-family: 'Alte Haas Grotesk Regular', sans-serif;
 }
 
 section {
-    min-height: 90vh;
-    padding-top: 65px;
+  min-height: 100vh;
 }
 
 body {
-    background-color: #EEF2F5;
+  background-color: #EEF2F5;
 }
 
 .App {
@@ -60,6 +74,17 @@ body {
   to { transform: rotate(360deg); }
 }
 
-h1, h2, h3 {
-  font-family: 'Alte Haas Grotesk Bold', sans-serif;
+.content {
+  display: flex;
+  min-height: 100vh;
+  padding: 6vw;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  text-align: left;
 }
