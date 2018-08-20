@@ -18,8 +18,8 @@ export default class CausesWrapper extends React.PureComponent {
     const { causes } = this.state
 
     return (
-      <div id="causes-wrapper col-md-12">
-        <h3>Pautas</h3>
+      <div className="causes-wrapper col-md-12">
+        <h4 className="causes-title">Pautas</h4>
         <ul className="causes-list">
         {causes && causes.map(c => {
           return (
