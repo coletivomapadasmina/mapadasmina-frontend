@@ -10,7 +10,7 @@ class CandidateMarker extends React.PureComponent {
       <Marker
         key={candidate.id}
         title={candidate.electionName}
-        position={{ lat: candidate.latitude, lng: candidate.longitude }}
+        position={{ lat: parseFloat(candidate.latitude), lng: parseFloat(candidate.longitude) }}
         icon={getIcon(candidate.role.id)}
         onClick={() => handleClick(candidate)}
       />

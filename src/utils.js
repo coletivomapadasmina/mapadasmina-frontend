@@ -9,5 +9,5 @@ export function getIcon(role) {
     3: stateDeputy
   }
 
-  return roles[role] || 1
+  return roles[role] || undefined
 }

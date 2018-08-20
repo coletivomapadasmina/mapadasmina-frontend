@@ -8,7 +8,7 @@ export default class CausesWrapper extends React.PureComponent {
   }
 
   componentDidMount() {
-    fetch('/causes.json')
+    fetch('https://mapadasmina-api.herokuapp.com/causes.json')
       .then(res => res.json())
       .then(data => this.setState({ causes: data }))
       .catch(err => console.log('err: ', console.log('error: ', err)))

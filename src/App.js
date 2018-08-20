@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('/candidates.json')
+    fetch('http://mapadasmina-api.herokuapp.com/candidates.json')
       .then(res => res.json())
       .then(data => {
         const candidates = this.getCausesIndexes(data)
