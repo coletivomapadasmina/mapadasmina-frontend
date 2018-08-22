@@ -3,14 +3,20 @@
   padding: 20px;
   background-color: #4B92E5;
   overflow: auto;
+  color: #fff;
 }
 
 .profile-candidate .inner {
   margin: 20px;
 }
 
-.profile-candidate h3 {
-  color: #FFF;
+.profile-party {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.profile-bio {
+  text-align: justify;
 }
 
 .profile-photo {

@@ -20,8 +20,8 @@ export default class Profile extends React.PureComponent {
                 src={profile.picture.url} />
           </div>
           <div>
-              <span>{profile.party.name} | {profile.number}</span><br />
-              <p>{profile.bio}</p>
+              <p className="profile-party">{profile.party.name} | {profile.number}</p>
+              <p className="profile-bio">{profile.bio}</p>
           </div>
         </div>
       </div>
