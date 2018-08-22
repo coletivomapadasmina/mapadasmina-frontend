@@ -14,7 +14,7 @@ function Lista(props) {
             <li>
                 <a href="#about">quem somos</a>
             </li>
-            <li>
+            <li className="d-none">
                 <a href="#"><button className="btn btn-doe">doe para o #mapa</button></a>
             </li>
         </ul >
