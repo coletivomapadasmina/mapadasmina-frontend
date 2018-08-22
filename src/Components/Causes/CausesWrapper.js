@@ -16,9 +16,10 @@ export default class CausesWrapper extends React.PureComponent {
 
   render() {
     const { causes } = this.state
+    const style = `causes-wrapper col-md-12 ${this.props.className}`
 
     return (
-      <div className="causes-wrapper col-md-12">
+      <div className={style}>
         <h4 className="causes-title">Pautas</h4>
         <ul className="causes-list">
         {causes && causes.map(c => {

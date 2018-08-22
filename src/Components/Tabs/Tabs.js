@@ -7,11 +7,11 @@ function Tabs(props) {
     return (
         <section className="tabs col-md-4">
             <div className="col-md-12 panel">
-              {
-                props.profile
-                ? <Profile profile={props.profile} handleClose={props.handleClose} />
-                : <CausesWrapper onChange={props.onChange} />
-              }
+              <CausesWrapper
+                onChange={props.onChange}
+                className={props.profile ? 'd-none': ''}
+              />
+              {props.profile && <Profile profile={props.profile} handleClose={props.handleClose} />}
             </div>
         </section>
     )
