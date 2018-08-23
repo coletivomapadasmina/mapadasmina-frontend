@@ -13,6 +13,7 @@ class App extends Component {
     visibleCandidates: [],
     selectedCandidate: null,
     checkedCauses: [],
+    checkedParties: [],
   }
 
   componentDidMount() {
@@ -55,7 +56,7 @@ class App extends Component {
 
     this.setState({
       visibleCandidates: filteredCandidates,
-      checkedCauses: checkedCauses
+      checkedCauses
     })
   }
 
@@ -74,7 +75,29 @@ class App extends Component {
 
     this.setState({
       visibleCandidates,
-      checkedCauses: checkedCauses
+      checkedCauses
+    })
+  }
+
+  onChangeParties = (e) => {
+    const { candidates, checkedParties } = this.state
+
+    const isChecked = e.target.checked
+    const checkedId = parseInt(e.target.id, 10)
+
+    isChecked
+      ? checkedParties.push(checkedId)
+      : checkedParties.splice(checkedParties.indexOf(checkedId), 1)
+
+    const filteredCandidates = candidates.filter(
+      candidate => checkedParties.indexOf(candidate.party.id) !== -1
+    )
+
+    const visibleCandidates = checkedParties.length ? filteredCandidates : candidates
+
+    this.setState({
+      visibleCandidates,
+      checkedParties
     })
   }
 
@@ -98,6 +121,7 @@ class App extends Component {
 
         <Tabs
           onChange={this.onChange}
+          onChangeParties={this.onChangeParties}
           profile={this.state.selectedCandidate}
           handleClose={this.handleClose}
         />
