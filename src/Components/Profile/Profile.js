@@ -1,6 +1,7 @@
 import React from 'react'
-import CloseButton from '../Close/CloseButton'
 import './Profile.css';
+import CloseButton from '../Close/CloseButton'
+import BioButton from '../BioButton'
 
 export default class Profile extends React.PureComponent {
   render() {
@@ -22,6 +23,8 @@ export default class Profile extends React.PureComponent {
           <div>
               <p className="profile-party">{profile.party.name} | {profile.number}</p>
               <p className="profile-bio">{profile.bio}</p>
+              {profile.campaignUrl && <BioButton url={profile.campaignUrl} text="Doe para a campanha" />}
+              {profile.supportUrl && <BioButton url={profile.supportUrl} text="Voluntarie-se" />}
           </div>
         </div>
       </div>
