@@ -2,9 +2,7 @@ import React from 'react'
 import './styles.css'
 
 const BioButton = ({ url, text }) => (
-  <div className="bio-button">
-    <a target="_blank" href={url}>{text}</a>
-  </div>
+  <a className="bio-button" target="_blank" href={url}>{text}</a>
 )
 
 export default BioButton

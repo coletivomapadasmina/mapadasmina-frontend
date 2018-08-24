@@ -1,14 +1,16 @@
 .bio-button {
+  display: block;
 	text-transform: uppercase;
 	background-color: #8026D0;
   padding: 0.5rem;
   border-radius: 4px;
+  margin: 1rem 0;
 }
 
-.bio-button a {
+a.bio-button {
   font-family: 'Alte Haas Grotesk Bold', sans-serif;
 }
 
-.bio-button a:hover {
+a.bio-button:hover {
   text-decoration: none;
 }
