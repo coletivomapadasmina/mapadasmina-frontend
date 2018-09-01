@@ -1,5 +1,6 @@
 import React from 'react'
 import './styles.css'
+import SocialNetworks from '../SocialNetworks'
 
 const About = () => (
   <section id="about">
@@ -13,6 +14,10 @@ const About = () => (
       <p>Cola com a gente que juntas somos maioria.</p>
 
       <h4>Encontre a gente</h4>
+      <SocialNetworks
+        facebook="https://www.facebook.com/mapadasmina2018"
+        instagram="https://www.instagram.com/mapadasmina/"
+      />
     </div>
   </section>
 )

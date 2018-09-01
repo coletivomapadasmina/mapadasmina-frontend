@@ -24,7 +24,13 @@ export default class Profile extends React.PureComponent {
           <div>
               <p className="profile-party">{profile.party.name} | {profile.number}</p>
               <p className="profile-bio">{profile.bio}</p>
-              {(profile.facebookUrl || profile.instagram) && <SocialNetworks facebook={profile.facebookUrl} instagram={profile.instagram} />}
+              {(profile.facebookUrl || profile.instagram) && (
+                <SocialNetworks
+                  showTitle
+                  facebook={profile.facebookUrl}
+                  instagram={profile.instagram}
+                />
+              )}
               {profile.campaignUrl && <BioButton url={profile.campaignUrl} text="Doe para a campanha" />}
               {profile.supportUrl && <BioButton url={profile.supportUrl} text="Voluntarie-se" />}
           </div>

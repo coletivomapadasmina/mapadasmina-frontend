@@ -1,8 +1,5 @@
-.social-networks {
-  margin-top: 2rem;
-}
-
 .social-networks .title {
+  margin-top: 2rem;
   text-transform: uppercase;
   color: #000;
 }
@@ -25,4 +22,21 @@
   display: inline-block;
   padding: 1.3rem;
   margin: 0 1rem 1rem;
+}
+
+.about-facebook-icon {
+  background: url(../../assets/img/facebook_icon_white.png) no-repeat center center;
+  background-size: 2.5rem;
+  border: none;
+  display: inline;
+  padding: 1.5rem;
+  margin-right: 1rem;
+}
+
+.about-instagram-icon {
+  background: url(../../assets/img/instagram_icon_white.png) no-repeat center center;
+  background-size: 2.5rem;
+  border: none;
+  display: inline;
+  padding: 1.3rem;
 }
