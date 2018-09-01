@@ -14,6 +14,7 @@ class App extends Component {
     selectedCandidate: null,
     checkedCauses: [],
     checkedParties: [],
+    checkedRole: 0,
   }
 
   componentDidMount() {
@@ -101,6 +102,24 @@ class App extends Component {
     })
   }
 
+  onChangeRoles = (e) => {
+    const { candidates, checkedRole } = this.state
+
+    const checkedId = parseInt(e.target.value, 10)
+    const shouldClearAll = (checkedRole === checkedId) || (checkedId === 0)
+
+    const visibleCandidates = shouldClearAll
+      ? candidates
+      : candidates.filter(
+          candidate => candidate.role.id === checkedId
+        )
+
+    this.setState({
+      visibleCandidates,
+      checkedRole: shouldClearAll ? 0 : checkedId
+    })
+  }
+
   handleClose = () => {
     this.setState({
       selectedCandidate: null
@@ -122,6 +141,8 @@ class App extends Component {
         <Tabs
           onChange={this.onChange}
           onChangeParties={this.onChangeParties}
+          onChangeRoles={this.onChangeRoles}
+          checkedRole={this.state.checkedRole}
           profile={this.state.selectedCandidate}
           handleClose={this.handleClose}
         />

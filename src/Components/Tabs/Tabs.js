@@ -2,6 +2,7 @@ import React from 'react';
 import './Tabs.css';
 import CausesWrapper from '../Causes/CausesWrapper'
 import PartiesWrapper from '../Parties/PartiesWrapper'
+import RolesWrapper from '../Roles/RolesWrapper'
 import Profile from '../Profile/Profile'
 
 function Tabs(props) {
@@ -16,6 +17,11 @@ function Tabs(props) {
               />
               <PartiesWrapper
                 onChange={props.onChangeParties}
+                className={styles}
+              />
+              <RolesWrapper
+                checked={props.checkedRole}
+                onChange={props.onChangeRoles}
                 className={styles}
               />
               {props.profile && <Profile profile={props.profile} handleClose={props.handleClose} />}
