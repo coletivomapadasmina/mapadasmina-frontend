@@ -2,7 +2,7 @@ import React from 'react'
 import PartiesItem from './PartiesItem'
 import './Parties.css'
 
-export default class CausesWrapper extends React.PureComponent {
+export default class PartiesWrapper extends React.PureComponent {
   state = {
     parties: []
   }
