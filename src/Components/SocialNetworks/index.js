@@ -11,12 +11,12 @@ const SocialNetworks = (props) => {
     <div className="social-networks">
       {showTitle && <h5 className="title">Redes Sociais</h5>}
       {facebook && (
-        <a target="_blank" href={facebook}>
+        <a target="_blank" rel="noopener noreferrer" href={facebook}>
           <i className={fbIcon}></i>
         </a>
       )}
       {instagram && (
-        <a target="_blank" href={instagram}>
+        <a target="_blank" rel="noopener noreferrer" href={instagram}>
           <i className={instaIcon}></i>
         </a>
       )}

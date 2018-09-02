@@ -16,7 +16,7 @@ const RolesItems = (props) => {
         <input
           value={props.id}
           type="checkbox"
-          checked={props.checked == props.id}
+          checked={props.checked === parseInt(props.id, 10)}
           onChange={props.onChange}
         />
         <span className="checkmark"></span>
