@@ -15,6 +15,7 @@ const About = () => (
 
       <h4>Encontre a gente</h4>
       <SocialNetworks
+        color="white"
         facebook="https://www.facebook.com/mapadasmina2018"
         instagram="https://www.instagram.com/mapadasmina/"
       />

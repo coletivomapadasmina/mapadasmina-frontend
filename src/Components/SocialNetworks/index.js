@@ -2,10 +2,10 @@ import React from 'react'
 import './styles.css'
 
 const SocialNetworks = (props) => {
-  const { facebook, instagram, showTitle } = props
+  const { facebook, instagram, showTitle, color } = props
 
-  const fbIcon = showTitle ? 'facebook-icon' : 'about-facebook-icon'
-  const instaIcon = showTitle ? 'instagram-icon' : 'about-instagram-icon'
+  const fbIcon = `bg-facebook_icon_${color}`
+  const instaIcon = `bg-instagram_icon_${color}`
 
   return (
     <div className="social-networks">

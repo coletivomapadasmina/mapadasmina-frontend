@@ -27,6 +27,7 @@ export default class Profile extends React.PureComponent {
               {(profile.facebookUrl || profile.instagram) && (
                 <SocialNetworks
                   showTitle
+                  color="black"
                   facebook={profile.facebookUrl}
                   instagram={profile.instagram}
                 />
