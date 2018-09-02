@@ -1,0 +1,19 @@
+#contribute .content {
+  background-image: url(../../assets/img/contribute.jpg);
+}
+
+#contribute .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+#contribute .bottom {
+  height: 10vh;
+}
+
+#contribute .links li {
+  display: inline;
+}

@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
-import Nav from './Components/Nav/Nav';
-import Header from './Components/Header/Header';
-import Tabs from './Components/Tabs/Tabs.js';
-import './App.css';
-import MapWrapper from './Components/Map/MapWrapper';
-import Motivation from './Components/Motivation';
-import About from './Components/About';
+import React, { Component } from 'react'
+import Nav from './Components/Nav/Nav'
+import Header from './Components/Header/Header'
+import Tabs from './Components/Tabs/Tabs.js'
+import './App.css'
+import MapWrapper from './Components/Map/MapWrapper'
+import Motivation from './Components/Motivation'
+import About from './Components/About'
+import Contribute from './Components/Contribute'
 
 class App extends Component {
   state = {
@@ -156,6 +157,8 @@ class App extends Component {
         <Motivation />
 
         <About />
+
+        <Contribute />
       </div>
     );
   }
