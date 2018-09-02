@@ -12,12 +12,12 @@ const Contribute = () => (
       </div>
 
       <div className="bottom w-100">
-        <div className="w-40 d-inline-block mr-5">
+        <div>
           <h4>Contatos</h4>
-          <p>coletivomapadasmina@gmail.com</p>
+          <p><a href="mailto:coletivomapadasmina@gmail.com">coletivomapadasmina@gmail.com</a></p>
         </div>
 
-        <div className="w-20 d-inline-block">
+        <div>
           <SocialNetworks
             color="white"
             facebook="https://www.facebook.com/mapadasmina2018"
@@ -25,7 +25,7 @@ const Contribute = () => (
           />
         </div>
 
-        <div className="w-40 d-inline-block">
+        <div>
           <ul className="links">
             <li>
               <a href="mailto:coletivomapadasmina@gmail.com">Sugestões</a>
@@ -38,6 +38,9 @@ const Contribute = () => (
             </li>
           </ul>
         </div>
+      </div>
+      <div className="copyright">
+        <p>© 2018 #mapadasmina. Todos os direitos reservados.</p>
       </div>
     </div>
   </section>

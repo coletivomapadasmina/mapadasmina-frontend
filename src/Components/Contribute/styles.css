@@ -1,5 +1,11 @@
 #contribute .content {
   background-image: url(../../assets/img/contribute.jpg);
+  padding-bottom: 1vh;
+  text-shadow: 1px 1px #333;
+}
+
+#contribute h3, h4 {
+  margin-bottom: 0;
 }
 
 #contribute .top {
@@ -7,13 +13,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 90vh;
 }
 
 #contribute .bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
   height: 10vh;
 }
 
 #contribute .links li {
   display: inline;
+}
+
+#contribute .links a {
+  font-family: 'Alte Haas Grotesk Regular', sans-serif;
+}
+
+#contribute .links a:hover {
+  text-decoration: underline;
+}
+
+#contribute .copyright {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.8rem;
 }
