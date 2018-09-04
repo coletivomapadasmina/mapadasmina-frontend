@@ -1,23 +1,25 @@
 import React from 'react'
 
-const RolesItems = (props) => {
+const RolesItems = ({ id, color, name, onChange, checkedRoles }) => {
   let styles = {
     width: '20px',
     height: '10px',
     marginLeft: '10px',
     display: 'inline-block',
-    backgroundColor: `#${props.color}`,
+    backgroundColor: `#${color}`,
   }
+
+  const isChecked = checkedRoles.indexOf(parseInt(id, 10)) !== -1
 
   return (
     <li className="roles-item">
-      <label className="roles-label">{props.name}
+      <label className="roles-label">{name}
         <div style={styles}></div>
         <input
-          value={props.id}
+          value={id}
           type="checkbox"
-          checked={props.checked === parseInt(props.id, 10)}
-          onChange={props.onChange}
+          checked={isChecked}
+          onChange={onChange}
         />
         <span className="checkmark"></span>
       </label>

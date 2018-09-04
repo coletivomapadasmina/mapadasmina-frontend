@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
 import RolesItem from './RolesItem'
 import './Roles.css'
 
 import { roles } from '../../utils'
 
-export default class RolesWrapper extends React.PureComponent {
-  getItems = (checked) => {
+export default class RolesWrapper extends Component {
+  getItems = (checkedRoles) => {
     const items = []
 
     for (let id in roles) {
@@ -13,7 +13,7 @@ export default class RolesWrapper extends React.PureComponent {
         <RolesItem
           key={id}
           id={id}
-          checked={checked}
+          checkedRoles={checkedRoles}
           name={roles[id].name}
           color={roles[id].primaryColor}
           onChange={this.props.onChange}
@@ -31,7 +31,7 @@ export default class RolesWrapper extends React.PureComponent {
       <div className={style}>
         <h4 className="roles-title">Cargos</h4>
         <ul className="roles-list">
-        {this.getItems(this.props.checked)}
+        {this.getItems(this.props.checkedRoles)}
         </ul>
       </div>
     )

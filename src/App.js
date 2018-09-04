@@ -15,7 +15,7 @@ class App extends Component {
     selectedCandidate: null,
     checkedCauses: [],
     checkedParties: [],
-    checkedRole: 0,
+    checkedRoles: [],
   }
 
   componentDidMount() {
@@ -104,20 +104,24 @@ class App extends Component {
   }
 
   onChangeRoles = (e) => {
-    const { candidates, checkedRole } = this.state
+    const { candidates, checkedRoles } = this.state
 
+    const isChecked = e.target.checked
     const checkedId = parseInt(e.target.value, 10)
-    const shouldClearAll = (checkedRole === checkedId) || (checkedId === 0)
 
-    const visibleCandidates = shouldClearAll
-      ? candidates
-      : candidates.filter(
-          candidate => candidate.role.id === checkedId
-        )
+    isChecked
+      ? checkedRoles.push(checkedId)
+      : checkedRoles.splice(checkedRoles.indexOf(checkedId), 1)
+
+    const filteredCandidates = candidates.filter(
+      candidate => checkedRoles.indexOf(candidate.role.id) !== -1
+    )
+
+    const visibleCandidates = checkedRoles.length ? filteredCandidates : candidates
 
     this.setState({
       visibleCandidates,
-      checkedRole: shouldClearAll ? 0 : checkedId
+      checkedRoles
     })
   }
 
@@ -143,7 +147,7 @@ class App extends Component {
           onChange={this.onChange}
           onChangeParties={this.onChangeParties}
           onChangeRoles={this.onChangeRoles}
-          checkedRole={this.state.checkedRole}
+          checkedRoles={this.state.checkedRoles}
           profile={this.state.selectedCandidate}
           handleClose={this.handleClose}
         />
