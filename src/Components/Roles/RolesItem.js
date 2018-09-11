@@ -9,19 +9,27 @@ const RolesItems = ({ id, color, name, onChange, checkedRoles }) => {
     backgroundColor: `#${color}`,
   }
 
-  const isChecked = checkedRoles.indexOf(parseInt(id, 10)) !== -1
+  // const isChecked = checkedRoles.indexOf(parseInt(id, 10)) !== -1
 
-  return (
+  // return (
+  //   <li className="roles-item">
+  //     <label className="roles-label">{name}
+  //       <div style={styles}></div>
+  //       <input
+  //         value={id}
+  //         type="checkbox"
+  //         checked={isChecked}
+  //         onChange={onChange}
+  //       />
+  //       <span className="checkmark"></span>
+  //     </label>
+  //   </li>
+  // )
+
+    return (
     <li className="roles-item">
       <label className="roles-label">{name}
         <div style={styles}></div>
-        <input
-          value={id}
-          type="checkbox"
-          checked={isChecked}
-          onChange={onChange}
-        />
-        <span className="checkmark"></span>
       </label>
     </li>
   )

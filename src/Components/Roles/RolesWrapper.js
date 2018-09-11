@@ -29,7 +29,7 @@ export default class RolesWrapper extends Component {
 
     return (
       <div className={style}>
-        <h4 className="roles-title">Cargos</h4>
+        <h4 className="roles-title">Legenda</h4>
         <ul className="roles-list">
         {this.getItems(this.props.checkedRoles)}
         </ul>
